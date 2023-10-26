@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/*----------------- ОБНУЛЯЮЩИЙ ---*/
+* {
+ padding: 0;
+ margin: 0;
+ border: 0;
+}
+
+*, *:before, *:after {
+ -webkit-box-sizing: border-box;
+ box-sizing: border-box;
+}
+
+:focus, :active {
+ outline: none;
+}
+
+a:focus, a:active {
+ outline: none;
+}
+
+nav, footer, header, aside {
+ display: block;
+}
+
+html, body {
+ height: 100%;
+ width: 100%;
+ font-size: 100%;
+ line-height: 1;
+ font-size: 14px;
+ -ms-text-size-adjust: 100%;
+ -moz-text-size-adjust: 100%;
+ -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+ font-family: inherit;
+}
+
+input::-ms-clear {
+ display: none;
+}
+
+button {
+ cursor: pointer;
+}
+
+button::-moz-focus-inner {
+ padding: 0;
+ border: 0;
+}
+
+a, a:visited {
+ text-decoration: none;
+}
+
+a:hover {
+ text-decoration: none;
+}
+
+ul li {
+ list-style: none;
+}
+
+img {
+ vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-size: inherit;
+ font-weight: inherit;
+}
+body {
+   width: 1200px;
+   font-family: "Montserrat";
+   padding: 10px 40px;
+   color: #666;
+
+}
+h1 {
+   font-size: 28px;
+   line-height: 32px;
+   margin-bottom: 30px;
+}
+.lesson {
+   margin-bottom: 20px;
+}
+.lesson p{
+   font-size: 18px;
+   line-height: 26px;
+}
+.lesson-describ {
+   color: #444;
+   text-shadow: 1px 1px 2px #AAA;
+}
+.block {
+   margin: 20px 0;
+   border: 2px solid #AAA;
+   box-shadow: 6px 6px 6px #666;
+}
+.main-form {
+   display: flex;
+}
+.main-form__column {
+   border: 1px solid #aaa;
+   flex: 0 0 50%;
+}
+
+.main-form__item {
+   padding: 10px 20px;
+   margin-bottom: 20px;
+}
+
+p.main-form__lable {
+   padding: 10px 20px;
+}
+.main-form__lable,
+.select__title {
+   font-size: 20px;
+   line-height: 24px;
+   margin-bottom: 20px;
+   color: #444;
+}
+.main-form__lable-lower{
+   font-size: 16px;
+   line-height: 24px;
+   margin-bottom: 20px;
+   color: #444;
+}
+input#input_1,
+textarea#input_2{
+   margin: 20px 0px;
+   border: 1px solid #666;
+   box-shadow: 4px 4px 4px #666 ;
+   width: 300px;
+   height: 30px;
+   margin-bottom: 40px;
+   font-size: 18px;
+   line-height: 24px;
+   border-radius: 4px;
+}
+textarea#input_2 {
+   height: 300px;
+}
+.input_1-massage,
+.input_2-massage {
+   font-size: 18px;
+   line-height: 24px;
+}
+.warn {
+   font-size: 24px;
+   line-height: 30px;
+   color: rgb(242, 78, 81);
+}
+
+.lable-lower {
+   margin-bottom: 10PX;
+}
+.lable-lower p{
+   margin: 10px 0px;
+   font-size: 16px;
+   line-height: 22px;
+}
+.lable-lower p:last-child{
+   margin-bottom: 0px;
+}
+.main-form__select {
+   margin: 10px 0px;
+   font-size: 16px;
+   line-height: 22px;
+}
+select {
+   margin: 10px 0px;
+   font-size: 18px;
+   line-height: 22px;
+}
+input#adfile {
+   font-size: 18px;
+   line-height: 22px;
+   width: 350px;
+   border-radius: 4px;
+   padding-left: 5px;
+}
+.main-form__load-file {
+   margin: 10px 0px;
+   font-size: 16px;
+   line-height: 22px;
+}
+.main-form__button {
+   margin: 10px 20px;
+   font-size: 16px;
+   line-height: 22px;
+}
+.button {
+   padding: 40px 0px  20px 0px;
+}
+span.button {
+   background-color: #aaa;
+   font-size: 20px;
+   line-height: 24px;
+   padding: 12px;
+   border-radius: 8px;
+}
+span.button:hover {
+   color: #fff;
+   background-color: #444;
+}
+
+.bottom {
+   width: 100%;
+   height: 30px;
+}

@@ -1,0 +1,94 @@
+<!---сообщаем браузеру о типе страницы --->
+<!DOCTYPE html>  
+<!---задаем язык содержимого --->
+<html lang="ru">
+	<head>
+		<!---Кодировка страницы --->	
+		<meta charset="utf-8">
+		<!---Адаптация --->	
+		<meta name="viewport" content="width=device-width">
+		<!---Шрифты --->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+		<!---Подключение стилей- файла css --->
+		<link rel="stylesheet" href="css/style.css">
+
+		<title>JS. События формы </title>
+	</head>
+	<!---Отображаемое тело страницы --->
+	<body>
+		<div class="wrapper">
+			<h1>Учебная форма, используем JS события формы! </h1>
+			<div class="lesson">
+				<p>Создаем форму и отрабатываем события формы и методы</p>
+				<p>К текстовым полям добавляем валидацию заполнения полей и счетчик символов</p>
+				<p>К полю <span class="lesson-describ">textarea</span> запретить вставку текста</p>
+			</div>
+			<div class="block">
+				<form name="main" class="main-form" action="#">
+					<div class="main-form__column ">
+						<div class="main-form__item input1">
+							<label for="input_1" class="main-form__lable">Поле ввода</label><br>
+							<input value="" id="input_1" type="text" name="nameInput" class="main-form__input" maxlength="30">
+							<p class="input_1-massage"></p>	
+						</div>
+						<div class="main-form__item input2">
+							<label for="input_2" class="main-form__lable">Текстовое поле</label><br>
+							<textarea id="input_2" type="text" name="nameTextarea" class="main-form__textarea" maxlength="600"></textarea>
+							<p class="input_2-massage"></p>	
+						</div>
+					</div> 
+					<div class="main-form__column ">
+						<p class="main-form__lable">Радиокнопки</p> 
+						<div class="main-form__item radio1">
+							<div class="main-form__radio1">
+								<div class="lable-lower">
+									<label class="main-form__lable-lower"> Одиночный выбор "Образование"</label><br>
+								</div>
+								<input checked type="radio"  name="educat" value="midl"> 
+								<label class="main-form__lable-lower" for="loweducat"> Среднее образование</label> <br>
+								<input type="radio" name="educat" value="hi"> 
+								<label class="main-form__lable-lower" for="hieducat"> Высшее образование</label> <br>
+							</div>
+						</div>
+						<div class="main-form__item radiomult">
+							<div class="main-form__radiomult">
+								<div class="lable-lower">
+									<label class="main-form__lable-lower"> Множественый выбор</label>
+								</div>
+								<div class="lable-lower">
+									<p><input checked type="checkbox" name="Проживание" value="yes">   Проживание</p>
+									<p><input type="checkbox" name="Питание" value="no">   Питание</p>
+									<p><input type="checkbox" name="Транспорт" value="no">   Транспорт</p>
+								</div>		
+							</div>
+						</div>
+						<div class="main-form__item select">
+							<div class="main-form__select">
+								<p class="select__title" >Колличество комнат</p>
+								<select  name="num-room">
+									<option selected value="1">1</option>
+									<option value="1">2</option>
+									<option value="1">3</option>
+									<option value="1">4</option>
+								</select>
+							</div>
+						</div>
+						<div class="main-form__item load-file">
+							<div class="main-form__load-file">
+								<input id="adfile" type="file" name="adfile">
+							</div>
+						</div>
+						<div class="main-form__button">
+							<button class="button" type="submit"> <span class="button">Отправка данных </span></button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!---Подключение скрипта JS --->
+		<script src="js/script.js"></script>
+		<div class="bottom"></div>
+	</body>
+</html>
